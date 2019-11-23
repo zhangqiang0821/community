@@ -1,0 +1,31 @@
+/* 回复 */
+.w-postInput{
+    
+}
+.zyc{position:fixed; left:0; top:0; right: 0; bottom:0; width:10000%; height:10000%; overflow:hidden; background:none; z-index:998;}
+.w-reply-box{position:fixed; left:0; bottom:0; align-items: center; padding:13px 30px; width:100%; background:#ffffff; color:#ababab; border-top:1PX solid #ececec; overflow:hidden; z-index:999 !important;}
+.w-reply-input-box{line-height:32px; background:#f6f6f6; border:1PX solid #dddddd; border-radius:5px;}
+.w-reply-input-box textarea{padding:20px; width:100%; height:70px; max-height:140px; line-height:32px; font-size:28px; background:none; color:#1a1a1a;overflow: auto;}
+.w-reply-submit{display:block; margin-left:10px; height:75px; width:120px; line-height:70px; font-size:32px; text-align:center; color:#000; background-size: 50px; border:1PX solid #dddddd; border-radius: 10px;}
+.PostInputBlock {
+  // .appBody{
+  //   position: static;
+  //   padding-top: 0;
+  // }
+  // .w-postInput .w-reply-box{
+  //   position: static;
+  // }
+}
+.PostInputNone {
+}
+/* 点击加载更多 */
+.w-load-more-btn{
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.28rem;
+  color: #ababab;
+  text-align: center;
+}
+img,iframe,audio,video{
+  max-width: 100%;
+}

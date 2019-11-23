@@ -1,0 +1,23 @@
+.IconNetworkError{
+	position:fixed;
+	top:330px;
+	left:0;
+	right:0;
+	text-align:center;
+}
+.IconNetworkError>img{
+	width:150PX;
+}
+.networkErrorMsg{
+	font-size:24px;
+	color:#575757;
+}
+.refreshBtn{
+	border:1PX solid #2582EA;
+	border-radius:10px;
+	display:inline-block;
+	margin:40px auto;
+	padding:20px 80px;
+	color:#2582EA;
+	font-size: 30px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html style="font-size: 50px;" _manifest="./index.appcache">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="Cache-Control" content="private">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <script type="text/javascript">
+    eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('(7(){a.z=7(b){8 4=6.g(\'4\');4.F=\'p/Q\';4.r=".d{R:S;P:M;N:0;O:0;p-X:Y}.d>2{9:l;c:l}.n{j-q:Z;k:#W}.o{m:T U#i;m-D:E;A:B-J;C:G H;I:L K;k:#i;j-q:1i}";6.1j(\'1k\').1f(0).1g(4);6.1h.r=\'<1 1q-1o=""><1 f="d"><2 y="\'+(u.1l(\'w-s\')||b)+\'"><1 f="n">1m</1><1 f="o" 16="a.17.14()">11</1></1></1>\'};a.t=7(b){8 2=6.g(\'2\');2.12("13",7(){8 3=6.g("1b"),h=3.18("19");3.9=5.9;3.c=5.c;h.1a(5,0,0,5.9,5.c);8 v=3.1e("1d/x");1c{u.15(\'w-s\',v);}1p(e){}},1n);2.y=b||\'./10/z-V.x\'};a.t(\'\');})()',62,89,'|div|img|imgCanvas|style|this|document|function|var|width|window|imgSrc|height|IconNetworkError||class|createElement|imgContext|2fb3fe|font|color|150px|border|networkErrorMsg|refreshBtn|text|size|innerHTML|networkErrorImages|setNetworkErrorImage|localStorage|imgAsDataURL||png|src|networkError|display|inline|margin|radius|5px|type|20px|auto|padding|block|40px|10px|165px|left|right|top|css|position|fixed|1PX|solid|icon|575757|align|center|12px|images|刷新看看|addEventListener|load|reload|setItem|onClick|location|getContext|2d|drawImage|canvas|try|image|toDataURL|item|appendChild|body|15px|getElementsByTagName|HEAD|getItem|网络错误|false|reactroot|catch|data'.split('|'),0,{}))
+    //百度统计
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?6f07b2d6c49c248a86e1544d1046e595";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    //引入vds埋点JS
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function () {
+      var setAccountId = window.location.href.indexOf('://comments.cx580.com') > -1 ? '98a393afb50790cb' : 'acaf54e60fa0713d'
+      _vds.push(['setAccountId', setAccountId]);
+      (function () {
+        var vds = document.createElement('script');
+        vds.type = 'text/javascript';
+        vds.async = true;
+        vds.src = '//dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
+      })();
+    })();
+    //车行易统计
+    function _cxytj() { //空统计
+      //初始化
+      this.init = function (productId, productVersion, isProduction) {
+      }
+      //屏蔽提交常用数据
+      this.recordUserBehavior = function (sessionId, eventId, attr1, attr2, attr3) {
+      }
+    }
+    var _cxytj = window.cxytj || new _cxytj; //创建对象
+    _cxytj.init("community", '1.0', window.location.href.indexOf('://comments.cx580.com') > -1 ? true : false); //初始化通用数据
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://tongji.cx580.com/userBehavior/static/js/cxytongji_v2.0.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+
+      var num = 60; //循环次数
+      var int = setInterval(function () {
+        if (window.cxytj) {
+          _cxytj = window.cxytj; //创建对象
+          _cxytj.init("community", '1.0', window.location.href.indexOf('://comments.cx580.com') > -1 ? true : false); //初始化通用数据
+          clearTimeout(int); //关闭计时器
+        }
+        if (--num < 1) {
+          clearTimeout(int); //关闭计时器
+        }
+      }, 500);
+    })();
+    //避免报错 先定义一个函数
+    window.tabsCallback = function () { }
+    window.dispatch = function (data) { }
+    window.pageUrl = ''; //链接清空
+
+    //当一个webview界面重新回到栈顶时触发该事件
+    function cxyPageResume() {
+      window.onShowReact && window.onShowReact(); //触发react事件
+    }
+
+  </script>
+  <link rel='stylesheet' href='//info.cx580.com/statics/css/emoji.css' type='text/css' />
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="//cx580.oss-cn-shenzhen.aliyuncs.com/cweb/js/cx580.jsApi.js" onerror="networkError('./images/networkError-icon.png')"></script>
+  <script src="//cx580.oss-cn-shenzhen.aliyuncs.com/cweb/js/react-dom-15.min.js" onerror="networkError('./images/networkError-icon.png')"></script>
+</body>
+
+</html>

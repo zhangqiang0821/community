@@ -1,0 +1,88 @@
+$color: #1a1a1a;
+$border: 2px solid #e5e5e5;
+$white: #fff;
+
+@import "../../../styles/w-style.scss";
+
+.menusBg{
+	background: #f1f1f1;
+	height: 100%;
+	.menusTop{
+		background: #2582EA;
+		color: #fff;
+		text-align: center;
+		font-size: 36px;
+		height: 80px;
+		line-height: 80px;
+		
+		.headerLeft{
+			position: absolute;
+			left: 30px;
+			font-size: 28px;
+		}
+		.headerRight{
+			position: absolute;
+			right: 30px;
+			font-size: 28px;
+		}
+	}
+}
+.menusBox{
+	width: 100%;
+	overflow: hidden;
+	.menusTitle{
+		font-size: 28px;
+		color: #6a6a6a;
+		padding-left: 30px;
+		padding-top: 24px;
+		line-height: normal;
+	}
+	.menuList{
+		padding-top: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		&>div{
+			float: left;
+			display: block;
+			flex: 1;
+			position: relative;
+			padding: 0 15px 30px;
+			width: 25%;
+			min-width: 25%;
+			max-width: 25%;
+			float: left;
+			span{
+				display: block;
+				width: 100%;
+				height: 60px;
+				border-radius: 6px;
+				line-height: 60px;
+				text-align: center;
+				font-size: 28px;
+				color: $color;
+				border: $border;
+				background: $white;
+				&.defaultMenu{
+					background: #e5e5e5;
+					color: #6a6a6a;
+				}
+			}
+			.close{
+				background-image: url(../../../images/icon-close.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: left center;
+				width: 34px;
+				height: 34px;
+				display: block;
+				position: absolute;
+				right: 15px;
+				top: -17px;
+				z-index: 2;
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+@import "../../../../styles/style.scss";
+$bg-f6: #f6f6f6; 
+.top {
+ 
+}
+.dl {
+      position: relative;
+      height: 1rem;
+       dt {
+         position: absolute;
+         top: $rem15;
+         left: $rem30;
+         display: block;
+         width: 0.64rem;
+         height: 0.64rem;
+         overflow: hidden;
+         border-radius: 100%;
+         background: $bg-f6;
+         color:  $bg-f6;
+       }
+       dd {
+         position: relative;
+         top:  $rem36;
+         margin-left: 1.24rem;
+         font-size: $rem26;
+         width: 1.5rem;
+         height:  $rem20;
+         line-height: $rem20;
+         background: $bg-f6;
+       }
+}
+.p {
+  color:  $bg-f6;
+  background: $bg-f6;
+  line-height: $rem20;
+  height: $rem20;
+}
+
+.div {
+      position: relative;
+      display: block;
+      margin-right: $rem12;
+      margin-bottom: $rem12;
+      width: 100%;
+      overflow: hidden;
+      background: $bg-f6;
+    }
+    .div:after {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+    background: $bg-f6;
+    }
+    .divLast {
+      margin-right: $rem0;
+    }

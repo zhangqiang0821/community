@@ -1,0 +1,60 @@
+@import "../../../styles/style.scss";
+.MsgListBodyOther {
+	display:block;
+	margin:$rem0 $rem30;
+	border-radius:3PX;
+	overflow:hidden;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+.MsgListBody {
+	display:block;
+	border-radius:3PX;
+	margin:$rem0 $rem30;
+	padding:0 0.1rem 0 0.96rem;
+	height:1rem;
+	position:relative;
+	overflow:hidden;
+	.MsgListBodyWordONE {
+		margin-top:$rem12;
+		line-height:$rem40;
+		width:100%;
+		height:$rem40;
+		text-overflow:ellipsis;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-line-clamp:1;
+		overflow:hidden;
+	}
+	.MsgListBodyImgList {
+		position:absolute;
+		top:0.14rem;
+		left:$rem10;
+		width:0.72rem;
+		overflow:hidden;
+
+		.MsgListBodyImg {
+		position:absolute;
+		left:0;
+		right:0;
+	}
+	}
+	.MsgListBodyImgList:after {
+		content:"";
+		display:block;
+		height:0;
+		padding-bottom:100%;
+	}
+}
+
+.MsgListBodyWord {
+	margin-top:20px;
+	line-height:1.35em;
+	width:100%;
+	min-height:0.75rem;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	overflow:hidden;
+}

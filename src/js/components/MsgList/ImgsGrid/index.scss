@@ -1,0 +1,51 @@
+@import "../../../../styles/style.scss";
+.MsgListGrid {
+    padding: $rem10 $rem18  $rem0 $rem30;
+
+    &>div{
+      margin-bottom: $rem12;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+
+    .MsgListGridImgList {
+      position: relative;
+      display: block;
+      margin-right: $rem12;
+      overflow: hidden;
+      img{
+        width: 100%;
+        
+        border:none;-moz-object-fit:cover;-ms-object-fit:cover;-o-object-fit:cover;-webkit-object-fit:cover;object-fit:cover;
+      }
+
+    }
+    .MsgListGridImgList:active{
+      opacity: 0.5;
+     // background: $darkgray;
+    }
+    .MsgListGridImgList:after {
+      content: "";
+      display: block;
+      height: 0;
+      padding-bottom: 100%;
+    }
+     .MsgListGridImg {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left:0;
+        right: 0;
+      }
+
+    .MsgListGridImgList.MsgListGridImgBox:after{
+      padding-bottom: 56%;
+    }
+    .MsgListGridImgList.MsgListGridImgBox{
+      .MsgListGridImg {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }

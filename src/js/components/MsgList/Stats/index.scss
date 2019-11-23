@@ -1,0 +1,58 @@
+@import "../../../../styles/style.scss";
+.stats {
+  display: block;
+  clear: both;
+  height: 88px;
+  line-height:88px;
+  overflow: hidden;
+  .width {
+    float: right;
+    width: 150px;
+    text-align: left;
+    i{
+      position: relative;
+      top: 6px;
+    }
+  }
+  .width2{
+    float: right;
+    text-align: left;
+    i{
+      position: relative;
+      top: 6px;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: $rem40;
+  height: $rem36;
+}
+.likeActive {
+  background: url('../../../../images/likeActive.png') no-repeat left center;
+  background-size: $rem32 auto;
+}
+.like {
+  background: url('../../../../images/like.png') no-repeat left center;
+  background-size: $rem32 auto;
+}
+.commentAsk {
+  background: url('../../../../images/commentAsk.png') no-repeat left bottom;
+  background-size: $rem32 auto;
+}
+.comment {
+  background: url('../../../../images/comment.png') no-repeat left bottom;
+  background-size: $rem32 auto;
+}
+.commentBlue {
+  background: url('../../../../images/comment-blue.png') no-repeat left bottom;
+  background-size: $rem32 auto;
+}
+.delBtn {
+  display: inline-block;
+  margin-left: $rem10;
+  padding: $rem0 $rem4;
+  border-bottom: 1PX solid $blue;
+  line-height: $rem26;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html style=" font-size: 50px;">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="Cache-Control" content="private">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>获取用户信息</title>
+
+</head>
+
+<body>
+    <label>token</label><br/>
+    <textarea rows="" cols="55" id="token"></textarea>
+    <br/>
+    <label>id</label><br/>
+    <textarea rows="" cols="55" id="id"></textarea>
+    <script src="http://act.cx580.com/js/lib/cx580.jsApi.js"></script>
+    <script>
+        cx580.jsApi.call({
+            "commandId": "",
+            "command": "getSymbol",
+            "data": {
+                "userid": "",
+                "lng": "",
+                "version": "",
+                "channel": "",
+                "cars": "",
+                "phone": "",
+                "name": "",
+                "type|orderNum": "",
+                "city": "",
+                "accountId": "",
+                "token": "",
+                "carId": "",
+                "carNumber": ""
+            }
+        }, function (data) {
+            document.getElementById("token").value = data.data.token;
+            document.getElementById("id").value = data.data.accountId;
+        });
+    </script>
+</body>
+
+</html>

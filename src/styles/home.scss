@@ -1,0 +1,247 @@
+@import "./style.scss";
+.tabody {
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  min-height: '2rem';
+  .tabody-tab {
+    position: relative;
+    z-index: 1;
+    left:0;
+    right: 0;
+    height: 60px;
+    overflow: hidden;
+    background: $bg-white;
+   // border-bottom: 1PX solid $border-color;
+    .tabody-tab-img {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      display: block;
+      width: $rem80;
+      height: auto;
+      padding-top: 0.02rem;
+      padding: 13px 30px 12px 15px;
+      background: $bg-white;
+      box-shadow: -$rem20 0 $rem30 $white;
+      img{
+        width: 30px;
+        height: auto;
+      }
+    }
+    
+    }
+  
+
+
+
+
+   .tabody-tagList  {
+     display: -webkit-box;
+     display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    
+       .am-tag {
+         box-sizing: border-box;
+         flex: 1;
+         margin-left: .08rem;
+         min-width: .2rem;
+         border:none !important;
+         display: inline-block;
+         width: 33.33%;
+         height: 0.7rem;
+         line-height: 0.73rem;
+       }
+    }
+
+
+
+    .Tabs {
+      .am-tabs-ink-bar {background: none;}
+      .am-tabs-bar .am-tabs-tab {
+        font-size: 0.26rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #6a6a6a;
+      }
+      .am-tabs-bar .am-tabs-tab-active {
+        color: $blue;
+      }
+
+    }
+
+
+
+    .hobbies-list {
+      position: relative;
+      left:0;
+      right: 0;
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+        .hobbies-item {
+          position: relative;
+          padding: 0 35px;
+          min-width: 120px;
+          font-size: 24px;
+          text-align: center;
+          color: #6a6a6a;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1PX;
+            height: 20px;
+            background: #eee;
+          }
+        }
+     }
+
+
+
+.Community-list-top
+    { 
+        .am-list-body {
+          border-top:none;
+        }
+        .am-list-thumb {
+          height: $rem40;
+        }
+        .am-list-item img {
+          margin-top: $rem4;
+           width: 0.34rem;
+           height: 0.35rem;
+           vertical-align: top;
+        }
+    }
+
+
+
+}
+.am-tabs-bar{
+  .am-tabs-ink-bar{
+    background-color:$blue;
+  }
+  .am-tabs-tab-active{
+    color:$blue;
+  }
+}
+
+//安卓
+.wTabs{
+  .am-tabs-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 132px;
+    padding-top: 48px;
+    background: rgba(204,204,204,1);
+    z-index: 8;
+    animation: tabsBg 1s;
+  }
+  .am-tabs-content{
+    margin-top: 132px;
+  }
+  &.notAddHeader{
+    .am-tabs-bar{
+      height: 84px;
+      padding-top:0;
+    }
+    .am-tabs-content{
+      margin-top: 84px;
+    }
+  }
+}
+
+//IOS
+.wTabsIos{
+  .am-tabs-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 124px;
+    padding-top: 40px;
+    background: #fff;
+    z-index: 8;
+  }
+  .am-tabs-content{
+    margin-top: 124px;
+  }
+  &.notAddHeader{
+    .am-tabs-bar{
+      height: 84px;
+      padding-top:0;
+    }
+    .am-tabs-content{
+      margin-top: 84px;
+    }
+  }
+}
+
+.notAppTabs{
+  .am-tabs-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 84px;
+    background: rgba(204,204,204,1);
+    z-index: 8;
+    animation: tabsBg 1s;
+  }
+  .am-tabs-content{
+    margin-top: 84px;
+  }
+  &.notAddHeader{
+    .am-tabs-bar{
+      height: 84px;
+      padding-top:0;
+    }
+    .am-tabs-content{
+      margin-top: 84px;
+    }
+  }
+}
+
+//动画
+@keyframes tabsBg{
+  0% {
+    background: rgba(204,204,204,.1);
+  }
+  100% {
+    background: rgba(204,204,204,1);
+  }
+}
+
+
+
+.MsgListBodyWord{
+	overflow:hidden;
+}
+
+
+.lineOrange {
+    position: absolute;
+    // margin-left: -8PX;
+    margin-top: 2PX;
+    display: block;
+    width:3PX;
+    height: 16PX;
+    background: #ff6200;
+}
+.line-more {
+  line-height: 24PX;
+}
+.til {
+    padding-left: 0.2rem;
+}

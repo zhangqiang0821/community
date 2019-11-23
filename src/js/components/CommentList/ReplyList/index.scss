@@ -1,0 +1,30 @@
+@import "../../../../styles/style.scss";
+.ReplyList {
+  margin-top: 28px;
+  margin-left: 84px !important;
+  border-radius: $rem4;
+  overflow: hidden;
+}
+.ReplyListitem {
+    white-space: break-all;
+    word-wrap:break-word;
+    &:active{
+      opacity: 0.5;
+    }
+}
+.ReplyListUser {
+  display: inline-block;
+  margin-right: $rem4;
+  line-height: 42px;
+}
+.NoToAuthor {
+  display: none
+}
+.ToAuthor {
+  display: inline-block;
+}
+
+.plr6{
+  padding-left: 6px;
+  padding-right: 6px;
+}

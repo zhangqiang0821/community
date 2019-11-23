@@ -1,0 +1,219 @@
+/* 全部基础样式配置 */
+@import "./style.scss";
+// 背景颜色和字体
+html {
+  background-color: $bg-lightgray;
+  height: 100%;
+}
+body {
+  background-color: $bg-lightgray;
+  // font-family: $font-family-zh;
+  color: $black;
+  height: 100%;
+}
+.bg-white {
+  background-color: $bg-white;
+}
+.bg-lightgray {
+  background-color: $bg-lightgray;
+}
+.bg-lightblue {
+  background-color: $bg-lightblue;
+}
+.bg-orange {
+  background-color: $orange;
+}
+.bor-T-gray {
+  border-top: 1PX solid $bg-lightgray
+}
+.bor-B-gray {
+  border-bottom: 1PX solid $bg-lightgray
+}
+// 文字对齐方式
+.ft-left {
+  text-align:$left
+}
+.ft-center {
+  text-align:$center
+}
+.ft-right {
+  text-align:$right
+}
+//浮动
+.float-left {
+  float:$left
+}
+.float-right {
+  float:$right
+}
+.float-clear {
+  clear: both
+}
+// 颜色
+.font-black{color: $black} 
+.font-darkgray{color: $darkgray} 
+.font-gray{color: $gray} 
+.font-lightgray{color: $lightgray} 
+.font-blue{color: $blue} 
+.font-orange{color: $orange} 
+.font-green{color: $green} 
+.font-red{color: $red} 
+.font-white{color: $white} 
+.bg-white{background: $white} 
+// 文字尺寸
+.font-40{font-size: $rem40} 
+.font-36{font-size: $rem36} 
+.font-32{font-size: $rem32} 
+.font-30{font-size: $rem30} 
+.font-28{font-size: $rem28} 
+.font-26{font-size: $rem26} 
+.font-24{font-size: $rem24} 
+// 定位
+.am-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.am-fixed-bottom {
+    top: inherit;
+    bottom: 0;
+}
+.am-static {
+    position: static;
+}
+// 图片
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+// 间距
+.am-whitespace.am-whitespace-rem24 {
+    height: $rem24;
+}
+.hide {
+  display: none
+}
+    // 
+.am-grid .am-flexbox .am-flexbox-item:active {
+    background: $white !important;
+}
+div {
+  cursor:pointer
+}
+.MsgListBodyWord{
+	overflow:hidden;
+	word-break: break-all;
+  word-wrap: break-word;
+}
+
+// 
+.am-button-primary {
+    color: #fff;
+    font-size: 0.32rem;
+    background-color: #00b4ff;
+    border: 1PX solid #00b4ff;
+        border-radius: 2PX;
+        height: 40PX;
+            line-height: 40PX;
+}
+
+.RadioItem {
+	background: #fafafa;
+	padding-left: 0;
+	min-height: $rem80;
+	.am-list-line {
+		min-height:$rem80;
+		.am-list-content {
+			white-space: normal; 
+			line-height: 20PX;
+		}
+	}	
+	 .am-radio {
+		height: auto !important;
+		.am-radio-inner {
+			border: 1PX solid #ababab;
+			border-radius: 50%;
+			top: 50% !important;
+			margin-top: -9PX;
+			width: 18PX;
+			height: 18PX;
+		}
+	}
+	.am-radio-checked {
+		.am-radio-inner {
+			border: 1PX solid #00b4ff !important;
+			top: 50% !important;
+			margin-top: -9PX;
+			width: 18PX;
+			height: 18PX;
+		}
+		.am-radio-inner:after {
+			top: 3PX;
+			right: 3PX;
+			border:none;
+			border-radius: 50%;
+			width: 10PX;
+			height: 10PX;
+			background: #00b4ff;
+			transform:none;
+		}
+	}
+	
+}
+
+.am-list-body:after,.am-list-body {
+    border-top: none;
+  	border-bottom: none;
+}
+.am-list-body div:not(:last-child) .am-list-line:after {
+    border-bottom: 1PX solid #efefef;
+}
+
+  
+
+.bannerBox {
+	line-height: 0;
+
+	.img {
+		 width: 100%;
+		 height: auto;
+  }
+}
+
+.Badge-blue-list .am-badge-text{
+        padding: 0 6PX;
+        border-radius: 10PX;
+        color: $blue;
+        background: #fff;
+        border: 1PX solid #2582EA;
+  }
+	
+.fixedApp{
+	position:fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	overflow: hidden;
+	z-index: 1;
+}
+.fixedIframe{
+	position:fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	overflow: auto;
+	z-index: 2;
+}

@@ -1,0 +1,12 @@
+
+.btnBox{
+    position: fixed;
+    left: inherit;
+    right: 30px;
+    bottom: 30px;
+    width: 132px;
+    height: 132px;
+    background: url('../../../images/icon-edit.png') no-repeat center center;
+    background-size: 132px auto;
+    z-index: 99;
+}

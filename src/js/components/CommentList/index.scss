@@ -1,0 +1,65 @@
+@import "../../../styles/style.scss";
+
+.commentListBox{
+  position: relative;
+  margin: 20px 30px 0;
+  padding: 0 30px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  &:after{
+    content:'';
+    display: block;
+    position: absolute;
+    top:-20px;
+    left: 80px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #f5f5f5;
+  }
+}
+.totalComment{
+  height: 80px;
+  line-height: 80px;
+  font-size: 28px;
+  color: #1a1a1a;
+  border-bottom: 1PX solid #eee;
+}
+
+.NOCommentList {
+  padding: $rem80 $rem0;
+}
+.icon {
+  display: inline-block;
+  width: $rem40;
+  height: $rem36;
+  margin-right: $rem10; 
+}
+.comment {
+  background: url('../../../images/comment.png') no-repeat left center;
+  background-size: $rem30 auto;
+}
+.padL {
+  padding-left: 54px;
+}
+.CommentList {
+  position: relative;
+  top: -1PX;
+  overflow: hidden;
+  &:after{
+    content: '';
+    display: 'block';
+    position: absolute;
+    top: 0;
+    left: 84px;
+    height: 1PX;
+    background: #eee;
+    width: 100%;
+  }
+}
+.CommentListContent {
+  padding-left: 54px;
+    white-space: break-all;
+    word-wrap:break-word;
+}

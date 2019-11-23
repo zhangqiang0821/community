@@ -1,0 +1,187 @@
+@import "../../../styles/style.scss";
+$bg-lightgray: #f1f1f1;
+
+.MsgList .am-list-body {
+    border-top: none;
+}
+
+.MsgListBG {
+  background: $bg-lightgray;
+  height: $rem24;
+}
+  
+    .inforIMGBody {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      
+      .inforIMG {
+        position: absolute;
+        left:0;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+    }
+    .inforIMGBody:after {
+      content: "";
+      display: block;
+      height: 0;
+      padding-bottom: 33.3%;
+    }
+
+    .lineOrange {
+    position: absolute;
+    left: -10PX;
+    margin-top: 2PX;
+    display: block;
+    width:3PX;
+    height: 16PX;
+    background: #ff0000;
+}
+
+
+.ReplyList {
+  margin-left: $rem30 !important;
+  margin-bottom: $rem20;
+  border-radius: $rem4;
+  overflow: hidden;
+}
+.ReplyList::before {
+  content: '';
+  position: relative;
+  left: $rem50;
+  display: block;
+   width: 0;
+    height: 0;
+    border-left: $rem10 solid transparent;
+    border-right: $rem10 solid transparent;
+    border-bottom: $rem10 solid $bg-lightblue;
+}
+.ReplyListitem {
+  padding: $rem15 ;
+  margin-right:  $rem30 ;
+}
+
+//列表
+.listBox{
+  position: relative;
+  transform: translate3d(0px, 0px, 0px);
+  background: $bg-lightgray;
+
+  .itemBox{
+      position: relative;
+      margin-bottom: 1PX;
+      padding-left: 84px;
+      padding-top: 64px;
+      overflow: hidden;
+
+    //用户信息
+    .userInfo{
+       position: absolute;
+       left: 0;
+       top: 0;
+       right: 0; 
+       line-height: 64px;
+    }
+  }
+
+    //下拉刷新的box
+    .updatasBox{
+        position:absolute;
+        top: -120px;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background: $bg-lightgray;
+        text-align: center;
+        display: block;
+        color: #ababab;
+        z-index: 0;
+        font-size: 28px;
+        .progressBox{
+            position: relative;
+            display: inline-block;
+            // bottom: 15px;
+            left: -40px;
+        }
+        .updatasBoxMsg{
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: inherit;
+            span{
+                position: relative;
+                top: -14px;
+                font-size: inherit;
+            }
+        }
+    }
+    //下拉刷新
+    .progressBox{
+    position:relative; 
+    background:$bg-lightgray no-repeat center center scroll;
+    overflow:hidden;
+    width:50px;
+    height:50px;
+        .progressIcon{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -12.5px;
+            margin-top: -12.5px;
+            width: 25px;
+            height:25px;
+        }
+        .progressBoxBar{
+            position: absolute;
+            left:4px;
+            top:4px;
+            width:42px; 
+            height:42px; 
+            box-sizing:border-box;
+            border-width: 2px;
+            border-color: #ababab;
+            border-style: solid;
+            border-radius: 50%;
+            transform: rotate(0deg);
+        }
+        .progressBoxBarLeftBox, .progressBoxBarRightBox{
+            position: absolute;
+            top: 0;
+            width:25px;
+            height: 50px;
+            overflow: hidden;
+            .progressBoxBarLeft, .progressBoxBarRight{
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            border-width: 8px;
+            border-color: transparent transparent $bg-lightgray $bg-lightgray;
+            border-style: solid;
+            border-radius: 50%;
+            box-sizing:border-box;
+            transform: rotate(45deg);
+            }
+            .progressBoxBarRight{
+            left: -25px;
+            transform: rotate(-130deg); //45deg 的时候 加载了一半
+            }
+        }
+        .progressBoxBarRightBox{
+            left: 25px;
+        }
+    }
+
+}
